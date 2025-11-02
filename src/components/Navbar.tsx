@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
-export default function Navbar({ className }: { className?: string }) {
+export default function Navbar() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const [servicesOpenMobile, setServicesOpenMobile] = useState(false);

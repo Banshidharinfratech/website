@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 
 
@@ -10,7 +11,7 @@ const content = [
       "We are committed to serve the interests of all our clients by being and establishing our position at the top within the country and be among the foremost companies across the India in our core business through exceptional business ethics.",
     content: (
       <div className="flex h-full w-full items-center justify-center text-white">
-        <img
+        <Image
           src="/assets/images/vis1.jpg"
           width={300}
           height={300}
@@ -26,7 +27,7 @@ const content = [
       "To provide our clients with the ability to complete in a safe, economical, timely and efficient manner while ensuring a consistently positive and professional experience.",
     content: (
       <div className="flex h-full w-full items-center justify-center text-white">
-        <img
+        <Image
           src="/assets/images/vis2.jpg"
           width={300}
           height={300}
@@ -42,7 +43,7 @@ const content = [
       "We wish to delight our customers and exceeding their expectations by providing maintenance free Crane, Boomlifts. Tower Cranes and prompt service.",
     content: (
       <div className="flex h-full w-full items-center justify-center text-white">
-        <img
+        <Image
           src="/assets/images/vis3.jpg"
           width={300}
           height={300}
