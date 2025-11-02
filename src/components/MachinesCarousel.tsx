@@ -11,10 +11,10 @@ interface Machine {
 }
 
 const machines: Machine[] = [
-  { image: "/images/machine1.jpg" },
-  { image: "/images/machine2.jpg" },
-  { image: "/images/machine3.jpg" },
-  { image: "/images/machine4.jpg" },
+  { image: "/assets/images/boomlift.jpg" },
+  { image: "/assets/images/mach12.jpg" },
+  { image: "/assets/images/mach13.jpg" },
+  { image: "/assets/images/pili.png" },
 ];
 
 const MachinesCarousel: React.FC = () => {

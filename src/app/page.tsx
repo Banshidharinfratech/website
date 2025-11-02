@@ -8,15 +8,15 @@ import MachinesCarousel from "@/components/MachinesCarousel";
 import { WorldMapDemo } from "@/components/WorldMapDemo";
 export default function Home() {
   return (
-   <>
-      <ImagesSliderDemo/>
-   
-    <HeroSection/>
-    <OurServices/>
-    <VisionTabs/>
-    <Vide/>
-<MachinesCarousel/>
-<WorldMapDemo/>
+    <>
+      <ImagesSliderDemo />
+
+      <HeroSection />
+      <OurServices />
+      <VisionTabs />
+      <Vide />
+      <MachinesCarousel />
+      <WorldMapDemo />
     </>
   );
 }
