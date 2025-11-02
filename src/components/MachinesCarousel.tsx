@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -40,11 +41,17 @@ const MachinesCarousel: React.FC = () => {
           {machines.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center">
-                <img
-                  src={item.image}
-                  alt={`Machine ${index + 1}`}
-                  className="rounded-xl w-full h-64 md:h-72 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
-                />
+                {/* parent must have position:relative and a defined height for Image fill */}
+                <div className="relative w-full h-64 md:h-72 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                  <Image
+                    src={item.image}
+                    alt={`Machine ${index + 1}`}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    style={{ objectFit: "cover" }}
+                    priority={index === 0}
+                  />
+                </div>
               </div>
             </SwiperSlide>
           ))}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ImagesSliderDemo } from "@/components/ImagesSliderDemo";
 import OurServices from "@/components/OurServices";
 import HeroSection from "@/components/HeroSection";
@@ -10,7 +9,6 @@ export default function Home() {
   return (
     <>
       <ImagesSliderDemo />
-
       <HeroSection />
       <OurServices />
       <VisionTabs />
